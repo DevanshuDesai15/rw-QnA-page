@@ -157,7 +157,7 @@ main {
 .container {
   width: 90vw;
   margin: 5rem auto;
-  background: var(--clr-white);
+  background: rgba(0, 0, 0, 0.7);
   border-radius: var(--radius);
   padding: 2.5rem 2rem;
   max-width: var(--fixed-width);
@@ -167,6 +167,7 @@ main {
 .container h3 {
   line-height: 1.2;
   font-weight: 500;
+  color: var(--clr-grey-special);
 }
 @media screen and (min-width: 992px) {
   .container {
@@ -176,7 +177,7 @@ main {
 }
 .question {
   padding: 1rem 1.5rem;
-  border: 2px solid var(--clr-grey-special);
+  background: linear-gradient(to top, #09203f 0%, #537895 100%);
   margin-bottom: 1rem;
   border-radius: var(--radius);
   box-shadow: var(--light-shadow);
@@ -184,11 +185,12 @@ main {
 .question h4 {
   text-transform: none;
   line-height: 1.5;
+  color: var(--clr-grey-special);
+  display: flex;
 }
 .question p {
-  color: var(--clr-grey-3);
-  margin-bottom: 0;
-  margin-top: 0.5rem;
+  color: #b6e1e0;
+  max-height: 999px;
 }
 .question header {
   display: flex;
@@ -199,18 +201,23 @@ main {
   margin-bottom: 0;
 }
 .btn {
-  background: transparent;
+  background-color: rgba(0, 0, 0, 0.2);
   border-color: transparent;
   width: 2rem;
   height: 2rem;
-  background: var(--clr-grey-special);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  color: var(--clr-red-special);
+  color: #e8630a;
   cursor: pointer;
   margin-left: 1rem;
   align-self: center;
   min-width: 2rem;
+  cursor: pointer;
+}
+.btn:hover{
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #b6e1e0;
 }
